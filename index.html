@@ -6,36 +6,26 @@
   <body style="background-color:Firebrick;">
     <h1> <center><p style="color:white"><font size="5">Days Until Christmas</h1>
   <body>
+    <hr>
   </body>
   <body>
     <font size="10">
-
     <!-- Display the countdown timer in an element -->
 <center><p id="demo" style="font-size:15px; color:white; center"></p>
-
-
-
 <script>
-
   var countDownDate = new Date("Dec 24, 2022 24:00:00").getTime();
-
   var x = setInterval(function() {
-
     var now = new Date().getTime();
-
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
-
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
     // Display the result in the element with id="demo"
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s";
-
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
