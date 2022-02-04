@@ -14,6 +14,7 @@
 <p id="demo" style="font-size:15px; color:white; center; line-height: 30px;"></p>
 
 <script>
+  line-height:.5;
   var countDownDate = new Date("Dec 24, 2022 24:00:00").getTime();
   var x = setInterval(function() {
     var now = new Date().getTime();
@@ -25,7 +26,6 @@
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     // Display the result in the element with id="demo"
-  <p> this is a test</p>
     document.getElementById("demo").innerHTML = days + "Days " + hours + "Hours"
   + minutes + "Minutes" + seconds + "Seconds";
   // If the count down is finished, write some text
@@ -36,8 +36,5 @@
 }, 1000);
   
 </script>
-
-
-
   </body>
 </html>
